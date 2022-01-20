@@ -30,7 +30,7 @@ public class Vote extends DateAudit{
 	private Choice choice;
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "user	_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false)
 	private User user;
 
 	public Long getId() {
